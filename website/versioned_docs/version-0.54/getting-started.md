@@ -103,8 +103,6 @@ original_id: getting-started
 npm install -g create-react-native-app
 ```
 
-Then run the following commands to create a new React Native project called "AwesomeProject":
-
 接下来运行以下命令来创建一个名为 `AwesomeProject` 的新 React Native 项目：
 
 ```npm
@@ -172,7 +170,7 @@ npm start
 
 <block class="native linux windows ios" />
 
-## Unsupported
+## 暂不支持
 
 <blockquote><p>使用本地开发环境构建IOS程序必须要使用MAC，当然你也可以前往 <a href="getting-started.md" onclick="displayTab('guide', 'quickstart')">快速开始</a> 学习使用 Create React Native App 来代替。</p></blockquote>
 
@@ -204,15 +202,11 @@ npm start
 
 <block class="native mac windows linux android" />
 
-While you can use any editor of your choice to develop your app, you will need to install Android Studio in order to set up the necessary tooling to build your React Native app for Android.
-
 虽然你可以使用任意编辑器（IDE）来开发你的 App，你最好安装 **Android Studio** 以自动配置安卓的相关依赖包及组件。
 
 <block class="native mac ios android" />
 
 ### Node, Watchman
-
-We recommend installing Node and Watchman using [Homebrew](http://brew.sh/). Run the following commands in a Terminal after installing Homebrew:
 
 我们推荐使用 [Homebrew](http://brew.sh/) 来安装 Node 和 Watchman ,在安装好 Homebrew 之后你可以通过下列命令安装：
 
@@ -222,8 +216,6 @@ brew install watchman
 ```
 
 如果你已经安装了 Node 环境，请确认其版本 >= 8.0
-
-[Watchman](https://facebook.github.io/watchman) is a tool by Facebook for watching changes in the filesystem. It is highly recommended you install it for better performance.
 
 [Watchman](https://facebook.github.io/watchman) 是一个由 Facebook 开发的实时监控开发文件变更的工具，我们强烈建议你安装此工具以获得更好的开发体验。
 
@@ -352,8 +344,6 @@ Android Studio 默认安装的时最新的 Android SDK。 但是，使用本机�
 
 > SDK Manager 也可以通过 Android Studio 的 "Preferences" 选项卡中找到:**Appearance & Behavior** → **System Settings** → **Android SDK**.
 
-Select the "SDK Platforms" tab from within the SDK Manager, then check the box next to "Show Package Details" in the bottom right corner. Look for and expand the `Android 6.0 (Marshmallow)` entry, then make sure the following items are all checked:
-
 从 SDK Manager 中选择“SDK Platforms”选项卡，然后勾选右下角的“Show Package Details”单选框。 展开 Android 6.0（Marshmallow）条目，确保勾选了下列选项：
 
 * `Google APIs`
@@ -429,7 +419,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 <block class="native windows android" />
 
-Open the System pane under **System and Security** in the Control Panel, then click on **Change settings...**. Open the **Advanced** tab and click on **Environment Variables...**. Click on **New...** to create a new `ANDROID_HOME` user variable that points to the path to your Android SDK:
+打开 **高级系统设置** 选择 **环境变量** 添加一个名为 `ANDROID_HOME` 的环境变量。
 
 ![ANDROID_HOME Environment Variable](/react-native/docs/assets/GettingStartedAndroidEnvironmentVariableANDROID_HOME.png)
 
@@ -513,19 +503,19 @@ I 如果您刚刚安装了 Android Studio，您可能需要创建一个新的 AV
 
 <block class="native windows android" />
 
-![Install HAXM](//react-native/docs/assets/GettingStartedCreateAVDx86Windows.png)
+![Install HAXM](/react-native/docs/assets/GettingStartedCreateAVDx86Windows.png)
 
 > 如果您没有安装 HAXM，请按照[以下说明](https://github.com/intel/haxm/wiki/Installation-Instructions-on-Windows) 进行设置，再回到 AVD 管理器。
 
-![AVD List](//react-native/docs/assets/GettingStartedAVDManagerWindows.png)
+![AVD List](/react-native/docs/assets/GettingStartedAVDManagerWindows.png)
 
 <block class="native mac android" />
 
-![Install HAXM](//react-native/docs/assets/GettingStartedCreateAVDx86MacOS.png)
+![Install HAXM](/react-native/docs/assets/GettingStartedCreateAVDx86MacOS.png)
 
 > 如果您没有安装 HAXM，请按照[以下说明](https://github.com/intel/haxm/wiki/Installation-Instructions-on-macOS)进行设置，再回到 AVD 管理器。
 
-![AVD List](//react-native/docs/assets/GettingStartedAVDManagerMacOS.png)
+![AVD List](/react-native/docs/assets/GettingStartedAVDManagerMacOS.png)
 
 <block class="native mac windows linux android" />
 
