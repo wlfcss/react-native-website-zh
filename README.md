@@ -2,6 +2,8 @@
 ---
 本项目fork于[React Native website](https://github.com/facebook/react-native-website)项目，并与[react-native-docsZh](https://github.com/wlfcss/react-native-docsZh)文档翻译项目进行同步，但移除了`0.5 - 0.52`版本的文档。
 
+您可前往[React-Native-CNDocs](http://rn.wlfcss.com/react-native/)
+
 ## 项目向导
 
 ### 准备
