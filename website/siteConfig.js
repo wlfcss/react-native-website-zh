@@ -10,7 +10,7 @@ const RemarkablePlugins = require("./core/RemarkablePlugins");
 const users = require("./showcase.json");
 
 const baseUrl = "/react-native/";
-const repoUrl = "https://github.com/facebook/react-native";
+const repoUrl = "https://github.com/wlfcss/react-native-website-zh";
 const siteConfig = {
   title: "React Native",
   tagline: "A framework for building native apps using React",
@@ -21,9 +21,9 @@ const siteConfig = {
   users,
   editUrl: "https://github.com/facebook/react-native-website/blob/master/docs/",
   headerLinks: [
-    { doc: "getting-started", label: "Docs" },
-    { page: "help", label: "Community" },
-    { blog: true, label: "Blog" },
+    { doc: "getting-started", label: "文档" },
+    { page: "help", label: "社区" },
+    { blog: true, label: "博客" },
     { search: true },
     { href: repoUrl, label: "GitHub" },
     { href: "https://reactjs.org/", label: "React" }

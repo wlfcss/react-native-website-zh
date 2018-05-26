@@ -71,27 +71,24 @@ class Versions extends React.Component {
     return (
       <div className="pageContainer">
         <Container className="mainContainer documentContainer postContainer">
-          <h1>React Native Versions</h1>
+          <h1>React Native 文档版本</h1>
           <p>
-            Open source React Native releases follow a monthly release train. At
-            the beginning of each month, a new release candidate is created off
-            the master branch on GitHub. The release candidate will soak for a
-            month to allow contributors like yourself to{" "}
-            <a href={siteConfig.baseUrl + "docs/upgrading.html"}>
-              verify the changes
-            </a>{" "}
-            and to identify any issues by{" "}
+            React Native作为开源项目每月都将发布新的测试版。
+            在每个月初，我们将于GitHub上的主分支上创建一个新的候选测试版。发布的候选版本将进行一个月的测试，以允许社区贡献者通过
+            。{" "}
             <a href="github.com/facebook/react-native/issues">
-              writing clear, actionable bug reports
-            </a>. Eventually, the release candidate will be promoted to stable.
+              编写条理清晰，可复现的错误报告
+            </a>. 以帮助我们处理bug并
+            <a href={siteConfig.baseUrl + "docs/upgrading.html"}>
+              验证版本的更新。
+            </a>{" "}
+            最后，候选的测试版将成为新的稳定版本。
           </p>
-          <h2>Latest versions</h2>
+          <h2>最新版文档</h2>
           <p>
-            To see what changes are coming and provide better feedback to React
-            Native contributors, use the latest release candidate when possible.
-            Changes introduced in a release candidate will have been shipped to
-            production Facebook apps for over two weeks by the time the release
-            is cut.
+            如果您要查看将要发生的版本更改并向React
+            Native贡献者提供更好的反馈，请尽可能使用最新版本的候选版本。
+            发布的候选版本引入的更改到正式上线将至少经过两周的测试。
           </p>
           <table className="versions">
             <tbody>
@@ -107,11 +104,10 @@ class Versions extends React.Component {
               })}
             </tbody>
           </table>
-          <h2>Stable versions</h2>
+          <h2>稳定版</h2>
           <p>
-            The most recent stable version will be used automatically whenever a
-            new project is created using the <code>react-native init</code>{" "}
-            command.
+            无论何时使用 <code>react-native init</code>{" "}
+            命令创建新项目，都会自动使用最新的稳定版本。
           </p>
           <table className="versions">
             <tbody>
@@ -128,9 +124,7 @@ class Versions extends React.Component {
             </tbody>
           </table>
           <p>
-            You can come back to this page and switch the version of the docs
-            you're reading at any time by clicking on the version number at the
-            top of the page.
+            您可以随时回到此页面并通过选择不同的版本号来切换您正在阅读的文档版本。
           </p>
         </Container>
       </div>
