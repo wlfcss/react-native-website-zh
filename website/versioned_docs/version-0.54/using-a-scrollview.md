@@ -62,4 +62,4 @@ AppRegistry.registerComponent(
 
 只用单个组件的`ScrollView`可用于允许用户缩放内容。 设置`maximumZoomScale`和`minimumZoomScale`属性，用户则可使用缩放手势进行组件的放大和缩小。
 
-`ScrollView` 适用于展示少量的滚动元素，由于放置于`ScrollView`之中的组件在页面加载时都会被统一渲染，即使其内容过长被挤出到屏幕外（译者注：由于`ScrollView`的全渲染特性，在内容过长时会导致严重的性能问题），所以如果需要显示较长的滚动列表时，则应该使用功能基本一致而性能更好的[ListView组件](using-a-listview.md)。
+`ScrollView` 适用于展示少量的滚动元素，由于放置于`ScrollView`之中的组件在页面加载时都会被统一渲染，即使其内容过长被挤出到屏幕外（译者注：由于`ScrollView`的全渲染特性，在内容过长时会导致严重的性能问题），所以如果需要显示较长的滚动列表时，则应该使用功能基本一致而性能更好的[ListView 组件](using-a-listview.md)。

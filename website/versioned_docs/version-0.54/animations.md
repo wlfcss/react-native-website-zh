@@ -4,7 +4,7 @@ title: 动画
 original_id: animations
 ---
 
-动画对于营造良好的用户体验有着极重要的作用。在现实生活中的物体都具有一个名为“惯性”的属性，我们在移动端App界面上亦可以使用此种遵循物理规律的交互体验。
+动画对于营造良好的用户体验有着极重要的作用。在现实生活中的物体都具有一个名为“惯性”的属性，我们在移动端 App 界面上亦可以使用此种遵循物理规律的交互体验。
 
 `React Native`提供了两种完善的动画系统：[`Animated`](animations.md#animated-api)是小粒度的和基本的交互控制的动画库;[`LayoutAnimation`](animations.md#layoutanimation-api)则是控制布局排版的动画库。
 
@@ -67,7 +67,7 @@ export default class App extends React.Component {
 
 让我们来分析一下，在 `FadeInView` 的构造函数中，声明了一个名为`fadeAnim`的新`Animated.Value`，并放置于 `state` 之中。同时我们将`View`的透明度与其绑定。
 
-当组件(component)加载时，初始透明度设置为0。接下来，启动与`fadeAnim`值绑定的动画函数，该值将在每帧上更新其所有依赖的映射（透明度），最终该透明度数值由0变为1。
+当组件(component)加载时，初始透明度设置为 0。接下来，启动与`fadeAnim`值绑定的动画函数，该值将在每帧上更新其所有依赖的映射（透明度），最终该透明度数值由 0 变为 1。
 
 上面的例子是一种经过优化的方案，比直接调用`setState`重新渲染要快。由于整个配置事先已经过声明，我们能够实现进一步的优化，动画在序列化配置的同时能在高优先级的线程上运行。
 
@@ -79,8 +79,7 @@ export default class App extends React.Component {
 
 默认情况下，`timing` 将使用`easeInOut`曲线，该曲线将逐步加速传递到全速，并通过逐渐减速停止结束。 您可以通过传递一个`easing`参数来指定一个不同的渐变函数。 自定义持续时间或动画开始之前的延迟也支持。
 
-（举例来说，如果我们希望创建一个时长为2s的动画：在其移动到最终位置前进行一个备份？）
-For example, if we want to create a 2-second long animation of an object that slightly backs up before moving to its final position:
+（举例来说，如果我们希望创建一个时长为 2s 的动画：在其移动到最终位置前进行一个备份？） For example, if we want to create a 2-second long animation of an object that slightly backs up before moving to its final position:
 
 ```javascript
 Animated.timing(this.state.xPosition, {
@@ -119,9 +118,9 @@ Animated.sequence([
 ]).start(); // start the sequence group
 ```
 
-通常来说，如果任何一个动画被停止或中断了，组内所有其它的动画也会被停止。Parallel有一个stopTogether属性，如果设置为false，可以禁用自动停止。
+通常来说，如果任何一个动画被停止或中断了，组内所有其它的动画也会被停止。Parallel 有一个 stopTogether 属性，如果设置为 false，可以禁用自动停止。
 
-你可以在[Composing animations](animated.md#composing-animations)中找到动画api合成方法的完整解释。
+你可以在[Composing animations](animated.md#composing-animations)中找到动画 api 合成方法的完整解释。
 
 ### 组合动画
 
@@ -142,7 +141,7 @@ Animated.spring(a, {
 
 每个属性都可以先通过插值运行。 插值将输入区间映射到输出区间，通常来说会使用线性插值，但也支持渐变功能(`easing functions`)。 默认情况下，它会将曲线外推到给定的范围之外，但您也可以使曲线限制输出值。
 
-下面有一个一个简单的从 0-1区间 到 0-100区间 的映射示例：
+下面有一个一个简单的从 0-1 区间 到 0-100 区间 的映射示例：
 
 ```javascript
 value.interpolate({
@@ -151,8 +150,7 @@ value.interpolate({
 });
 ```
 
-通常来说，你可能想
-例如，您可能想要将 `Animated.Value` 变化视为从 0 到 1，但其位置从 150px 变为 0px，不透明度从 0 变为 1.这可以通过修改上述示例的 `style` 轻松完成 ：
+通常来说，你可能想例如，您可能想要将 `Animated.Value` 变化视为从 0 到 1，但其位置从 150px 变为 0px，不透明度从 0 变为 1.这可以通过修改上述示例的 `style` 轻松完成 ：
 
 ```javascript
   style={{
@@ -166,7 +164,7 @@ value.interpolate({
   }}
 ```
 
-[`interpolate()`](animated.md#interpolate)支持多种区间设置，一般用作定义静止区间。举例来说，要设计输入在等于-300时取相反值，在输入等于-100时取0,接下来在输入等于0时又增长到1,接着一直到输入到100的过程中逐步回到0，最后形成一个始终为0的静止区间，对于任何大于100的输入都返回0。其具体写法如下：
+[`interpolate()`](animated.md#interpolate)支持多种区间设置，一般用作定义静止区间。举例来说，要设计输入在等于-300 时取相反值，在输入等于-100 时取 0,接下来在输入等于 0 时又增长到 1,接着一直到输入到 100 的过程中逐步回到 0，最后形成一个始终为 0 的静止区间，对于任何大于 100 的输入都返回 0。其具体写法如下：
 
 ```javascript
 value.interpolate({
@@ -217,11 +215,11 @@ Animated.timing(opacity, {
 }).start();
 ```
 
-`leader` 和 `follower` 动画将使用 `Animated.ValueXY()` 来实现。 `ValueXY` 是一个能方便处理2D交互的方式，比如旋转或是拖拽，这是一个包含了两种 `Animated.Value` 实例的包装器，提供了大量的辅助函数，这使得 `ValueXY` 在很多时候都可以替代 `Value` 使用。比如在上方的示例中，当 `leader` 和 `follower` 均为 `ValueXY` 类型是，x 与 y 值都能被跟踪。
+`leader` 和 `follower` 动画将使用 `Animated.ValueXY()` 来实现。 `ValueXY` 是一个能方便处理 2D 交互的方式，比如旋转或是拖拽，这是一个包含了两种 `Animated.Value` 实例的包装器，提供了大量的辅助函数，这使得 `ValueXY` 在很多时候都可以替代 `Value` 使用。比如在上方的示例中，当 `leader` 和 `follower` 均为 `ValueXY` 类型是，x 与 y 值都能被跟踪。
 
 ### 手势跟踪
 
-Animated.event是Animated API中与输入有关的部分，允许手势或其它事件直接绑定到动态值上。它通过一个结构化的映射语法来完成，使得复杂事件对象中的值可以被正确的解开。第一层是一个数组，允许同时映射多个值，然后数组的每一个元素是一个嵌套的对象。在下面的例子里，你可以发现scrollX被映射到了event.nativeEvent.contentOffset.x(event通常是回调函数的第一个参数)，并且pan.x和pan.y分别映射到gestureState.dx和gestureState.dy（gestureState是传递给PanResponder回调函数的第二个参数）。
+Animated.event 是 Animated API 中与输入有关的部分，允许手势或其它事件直接绑定到动态值上。它通过一个结构化的映射语法来完成，使得复杂事件对象中的值可以被正确的解开。第一层是一个数组，允许同时映射多个值，然后数组的每一个元素是一个嵌套的对象。在下面的例子里，你可以发现 scrollX 被映射到了 event.nativeEvent.contentOffset.x(event 通常是回调函数的第一个参数)，并且 pan.x 和 pan.y 分别映射到 gestureState.dx 和 gestureState.dy（gestureState 是传递给 PanResponder 回调函数的第二个参数）。
 
 手势，比如平移或滚动，以及其他事件可以使用[`Animated.event`](animated.md#event)直接映射到动画值。 这是通过结构化的映射语法完成的，以便可以从复杂的事件对象中提取值。第一层是一个数组，允许同时映射多个值，然后数组的每一个元素是一个嵌套的对象
 
@@ -241,7 +239,7 @@ For example, when working with horizontal scrolling gestures, you would do the f
  )}
 ```
 
-使用 `PanResponder` 时，可以使用以下代码从 `gestureState.dx` 和 `gestureState.dy` 中提取x和y位置。 我们在数组的第一个位置使用null，因为我们只关心传递给 `PanResponder` 处理程序(即 `gestureState`)的第二个参数。
+使用 `PanResponder` 时，可以使用以下代码从 `gestureState.dx` 和 `gestureState.dy` 中提取 x 和 y 位置。 我们在数组的第一个位置使用 null，因为我们只关心传递给 `PanResponder` 处理程序(即 `gestureState`)的第二个参数。
 
 ```javascript
 onPanResponderMove={Animated.event(
@@ -254,16 +252,16 @@ onPanResponderMove={Animated.event(
 
 ### 响应当前的动画值
 
-你可能会注意到这里没有一个明显的方法来在动画的过程中读取当前的值 —— 这是出于优化的角度考虑，有些值只有在原生代码运行阶段中才知道。如果你需要在JavaScript中响应当前的值，有两种可能的办法：
+你可能会注意到这里没有一个明显的方法来在动画的过程中读取当前的值 —— 这是出于优化的角度考虑，有些值只有在原生代码运行阶段中才知道。如果你需要在 JavaScript 中响应当前的值，有两种可能的办法：
 
 * `spring.stopAnimation(callback)` 会停止动画并且把最终的值作为参数传递给回调函数`callback` ——这在处理手势动画的时候非常有用。
-* `spring.addListener(callback)`会在动画的执行过程中持续异步调用 `callback` 回调函数，提供一个最近的值作为参数。这在用于触发状态切换的时候非常有用，譬如当用户拖拽一个东西靠近的时候弹出一个新的气泡选项。不过这个状态切换可能并不会十分灵敏，因为它不像许多连续手势操作（如旋转）那样在60fps下运行。
+* `spring.addListener(callback)`会在动画的执行过程中持续异步调用 `callback` 回调函数，提供一个最近的值作为参数。这在用于触发状态切换的时候非常有用，譬如当用户拖拽一个东西靠近的时候弹出一个新的气泡选项。不过这个状态切换可能并不会十分灵敏，因为它不像许多连续手势操作（如旋转）那样在 60fps 下运行。
 
-`Animated` 被设计为可以完全序列化，以保证其拥有高效率的性能，且独立于普通的js事件循环，这极大的影响了相关API的设计，所以请记住一点，当你感到非常棘手时，请查阅 `Animated.Value.addListener`,及时其作为一种有诸多限制与警告的方法，请谨慎使用（这对性能将造成极大的影响）。 
- 
+`Animated` 被设计为可以完全序列化，以保证其拥有高效率的性能，且独立于普通的 js 事件循环，这极大的影响了相关 API 的设计，所以请记住一点，当你感到非常棘手时，请查阅 `Animated.Value.addListener`,及时其作为一种有诸多限制与警告的方法，请谨慎使用（这对性能将造成极大的影响）。
+
 ### 使用原生驱动动画
 
-`Animated(动画)` 的API可转化为字符串表达以便通信或存储（可序列化）。通过使用 [native driver](http://facebook.github.io/react-native/blog/2017/02/14/using-native-driver-for-animated.html)，我们在启动动画前就把其所有配置信息都发送到原生端，利用原生代码在UI线程执行动画，而不用每一帧都在两端间来回沟通。 如此一来，动画一开始就完全脱离了JS线程，因此此时即便JS线程被卡住，也不会影响到动画。
+`Animated(动画)` 的 API 可转化为字符串表达以便通信或存储（可序列化）。通过使用 [native driver](http://facebook.github.io/react-native/blog/2017/02/14/using-native-driver-for-animated.html)，我们在启动动画前就把其所有配置信息都发送到原生端，利用原生代码在 UI 线程执行动画，而不用每一帧都在两端间来回沟通。 如此一来，动画一开始就完全脱离了 JS 线程，因此此时即便 JS 线程被卡住，也不会影响到动画。
 
 在动画中启用原生驱动非常简单。 只需在开始动画之前，在动画配置中加入一行`useNativeDriver: true`，如下所示：
 
@@ -300,8 +298,7 @@ Animated.timing(this.state.animatedValue, {
 
 #### 注意事项
 
-原生驱动目前并不完全支持`Animated`。 主要限制是您只能对非布局属性进行动画处理：比如 `transform` 和 `opacity` 但`flexbox`和`position`属性则不行。 使用`Animated.event`时，它只能用于直接事件而不是冒泡事件。 这意味着它不适用于`PanResponder`，但可以与`ScrollView#onScroll`一起使用
-在动画运行时，可以防止VirtualizedList组件渲染更多行。 如果您需要在用户滚动浏览列表时运行长循环动画，则可以在动画配置中使用 `isInteraction：false` 来防止此问题。
+原生驱动目前并不完全支持`Animated`。 主要限制是您只能对非布局属性进行动画处理：比如 `transform` 和 `opacity` 但`flexbox`和`position`属性则不行。 使用`Animated.event`时，它只能用于直接事件而不是冒泡事件。 这意味着它不适用于`PanResponder`，但可以与`ScrollView#onScroll`一起使用在动画运行时，可以防止 VirtualizedList 组件渲染更多行。 如果您需要在用户滚动浏览列表时运行长循环动画，则可以在动画配置中使用 `isInteraction：false` 来防止此问题。
 
 ### Bear in mind
 
@@ -321,18 +318,18 @@ Animated.timing(this.state.animatedValue, {
 
 ### 其他例子
 
-RNTester的APP里有众多的关于 `Animated(动画)` 的例子：
+RNTester 的 APP 里有众多的关于 `Animated(动画)` 的例子：
 
 * [AnimatedGratuitousApp](https://github.com/facebook/react-native/tree/master/RNTester/js/AnimatedGratuitousApp)
 * [NativeAnimationsExample](https://github.com/facebook/react-native/blob/master/RNTester/js/NativeAnimationsExample.js)
 
 ## `LayoutAnimation(布局动画)` API
 
-`LayoutAnimation`允许你在全局范围内`创建`和`更新`动画，这些动画会在下一次渲染或布局周期运行。它常用来更新flexbox布局，因为它可以无需测量或者计算特定属性就能直接产生动画。尤其是当布局变化可能影响到父节点（譬如“查看更多”展开动画既增加父节点的尺寸又会将位于本行之下的所有行向下推动）时，如果不使用`LayoutAnimation`，可能就需要显式声明组件的坐标，才能使得所有受影响的组件能够同步运行动画。
+`LayoutAnimation`允许你在全局范围内`创建`和`更新`动画，这些动画会在下一次渲染或布局周期运行。它常用来更新 flexbox 布局，因为它可以无需测量或者计算特定属性就能直接产生动画。尤其是当布局变化可能影响到父节点（譬如“查看更多”展开动画既增加父节点的尺寸又会将位于本行之下的所有行向下推动）时，如果不使用`LayoutAnimation`，可能就需要显式声明组件的坐标，才能使得所有受影响的组件能够同步运行动画。
 
 注意尽管`LayoutAnimation`非常强大，但它对动画本身的控制没有`Animated`或者其它动画库那样方便，所以如果你使用`LayoutAnimation`无法实现一个效果，那可能还是要考虑其他的方案。
 
-另外，如果要在**Android**上使用LayoutAnimation，那么目前还需要在`UIManager`中启用：
+另外，如果要在**Android**上使用 LayoutAnimation，那么目前还需要在`UIManager`中启用：
 
 ```javascript
 UIManager.setLayoutAnimationEnabledExperimental &&
@@ -411,11 +408,10 @@ const styles = StyleSheet.create({
 
 ### `requestAnimationFrame`
 
-`requestAnimationFrame`是一个对浏览器标准API的兼容实现，你可能已经熟悉它了。它接受一个函数作为唯一的参数，并且在下一次重绘之前调用此函数。一些基于JavaScript的动画库高度依赖于这一API。通常你不必直接调用它——那些动画库会替你管理好帧的更新。
+`requestAnimationFrame`是一个对浏览器标准 API 的兼容实现，你可能已经熟悉它了。它接受一个函数作为唯一的参数，并且在下一次重绘之前调用此函数。一些基于 JavaScript 的动画库高度依赖于这一 API。通常你不必直接调用它——那些动画库会替你管理好帧的更新。
 
 ### `setNativeProps`
 
 正如[in the Direct Manipulation section(直接操作)](direct-manipulation.html)文档所说，`setNativeProps`方法可以使我们直接修改基于原生视图的组件的属性，而不需要使用`setState`来重新渲染整个组件树。如果我们要更新的组件有一个非常深的内嵌结构，并且没有使用`shouldComponentUpdate`来优化，那么使用`setNativeProps`就将大有裨益。
 
-如果你发现你的动画丢帧（低于60帧每秒），可以尝试使用`setNativeProps`或者`shouldComponentUpdate`来优化它们。
-或者，您也可以在UI线程上运行动画，而不是使用[useNativeDriver选项](http://facebook.github.io/react-native/blog/2017/02/14/using-native-driver-for-animated.html)运行JavaScript线程。你还可以考虑将部分计算工作放在动画完成之后进行，这时可以使用[InteractionManager](interactionmanager.html)。你还可以使用应用内的开发者菜单中的“FPS Monitor”工具来监控应用的帧率。
+如果你发现你的动画丢帧（低于 60 帧每秒），可以尝试使用`setNativeProps`或者`shouldComponentUpdate`来优化它们。或者，您也可以在 UI 线程上运行动画，而不是使用[useNativeDriver 选项](http://facebook.github.io/react-native/blog/2017/02/14/using-native-driver-for-animated.html)运行 JavaScript 线程。你还可以考虑将部分计算工作放在动画完成之后进行，这时可以使用[InteractionManager](interactionmanager.html)。你还可以使用应用内的开发者菜单中的“FPS Monitor”工具来监控应用的帧率。

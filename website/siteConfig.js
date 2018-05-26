@@ -12,7 +12,7 @@ const users = require("./showcase.json");
 const baseUrl = "/react-native/";
 const repoUrl = "https://github.com/wlfcss/react-native-website-zh";
 const siteConfig = {
-  title: "React Native",
+  title: "React Native 中文",
   tagline: "A framework for building native apps using React",
   url: "https://facebook.github.io",
   baseUrl,

@@ -9,15 +9,15 @@ original_id: components-and-apis
 * [基础组件](components-and-apis.md#basic-components)
 * [用户界面](components-and-apis.md#user-interface)
 * [列表视图](components-and-apis.md#list-views)
-* [iOS特有组件与接口](components-and-apis.md#ios-components-and-apis)
-* [Android特有组件及接口](components-and-apis.md#android-components-and-apis)
+* [iOS 特有组件与接口](components-and-apis.md#ios-components-and-apis)
+* [Android 特有组件及接口](components-and-apis.md#android-components-and-apis)
 * [其他](components-and-apis.md#others)
 
-您不必只使用`React Native`原生的组件和API。`React Native`是由数千名开发人员组成的社区。 如果您正在寻找一个特定库，请在`npm`中搜索提到[react-native](https://www.npmjs.com/search?q=react-native&page=1&ranking=optimal)的包，或查看[Awesome React Native](http://www.awesome-react-native.com/)获取相关信息。
+您不必只使用`React Native`原生的组件和 API。`React Native`是由数千名开发人员组成的社区。 如果您正在寻找一个特定库，请在`npm`中搜索提到[react-native](https://www.npmjs.com/search?q=react-native&page=1&ranking=optimal)的包，或查看[Awesome React Native](http://www.awesome-react-native.com/)获取相关信息。
 
-## 基础组件Basic Components
+## 基础组件 Basic Components
 
-绝大多数的APP都会使用这些基础组件，如果你是一个RN的新手，请先熟悉下列基础组件：
+绝大多数的 APP 都会使用这些基础组件，如果你是一个 RN 的新手，请先熟悉下列基础组件：
 
 <div class="component-grid component-grid-border">
   <div class="component">
@@ -84,9 +84,9 @@ original_id: components-and-apis
   </div>
 </div>
 
-## ios组件和接口 iOS Components and APIs
+## ios 组件和接口 iOS Components and APIs
 
-以下众多的组件为常见的UIKit类提供了二次包装。
+以下众多的组件为常见的 UIKit 类提供了二次包装。
 
 <div class="component-grid component-grid-border">
   <div class="component">
@@ -230,4 +230,3 @@ These components may come in handy for certain applications. For an exhaustive l
     <p>A component that renders web content in a native view.</p>
   </div>
 </div>
-

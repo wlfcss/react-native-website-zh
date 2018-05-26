@@ -6,11 +6,11 @@ original_id: debugging
 
 ## 开启调试快捷键
 
-React Native 支持多种在ios模拟器上的快捷键，下面将会详细介绍，若要启动它们，打开`Hardware`菜单，选择`Keyboard`选项卡，确保 `Connect Hardware Keyboard` 选项开启。
+React Native 支持多种在 ios 模拟器上的快捷键，下面将会详细介绍，若要启动它们，打开`Hardware`菜单，选择`Keyboard`选项卡，确保 `Connect Hardware Keyboard` 选项开启。
 
-## 访问APP内的开发菜单
+## 访问 APP 内的开发菜单
 
-您可以通过摇晃设备或在IOS模拟器的`Hardware`菜单中选择“Shake Gesture”选项来调出开发者菜单，另外，如果是在iOS模拟器中运行，还可以按下`⌘ + D` 快捷键，Android模拟器对应的则是`⌘ + M`。当然，如果是Android,您还可以通过adb工具运行命令`adb shell input keyevent 82`来打开开发者菜单（82是菜单代码）。
+您可以通过摇晃设备或在 IOS 模拟器的`Hardware`菜单中选择“Shake Gesture”选项来调出开发者菜单，另外，如果是在 iOS 模拟器中运行，还可以按下`⌘ + D` 快捷键，Android 模拟器对应的则是`⌘ + M`。当然，如果是 Android,您还可以通过 adb 工具运行命令`adb shell input keyevent 82`来打开开发者菜单（82 是菜单代码）。
 
 ![](/react-native/docs/assets/DeveloperMenu.png)
 
@@ -18,10 +18,9 @@ React Native 支持多种在ios模拟器上的快捷键，下面将会详细介�
 
 ## 刷新 JavaScript
 
-在React Native开发中，每次改动后您再也不需要等待漫长的重编译，通过`reloading javascripts(重新加载js)`将可以简单快速的查看界面/功能变化，具体的操作就是在开发菜单中点击"Reload"选项。也可以在iOS模拟器中按下`⌘ + R` ，Android模拟器上对应的则是按两下`R`。
+在 React Native 开发中，每次改动后您再也不需要等待漫长的重编译，通过`reloading javascripts(重新加载js)`将可以简单快速的查看界面/功能变化，具体的操作就是在开发菜单中点击"Reload"选项。也可以在 iOS 模拟器中按下`⌘ + R` ，Android 模拟器上对应的则是按两下`R`。
 
 ### 自动刷新
-
 
 You can speed up your development times by having your app reload automatically any time your code changes. Automatic reloading can be enabled by selecting "Enable Live Reload" from the Developer Menu.
 

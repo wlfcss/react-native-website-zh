@@ -16,9 +16,7 @@ A performant interface for rendering simple, flat lists, supporting the most han
 * Scroll loading.
 * ScrollToIndex support.
 
-If you need section support, use [`SectionList`](sectionlist.md).
-啊师傅大师傅打的方式
-Minimal Example:
+If you need section support, use [`SectionList`](sectionlist.md). 啊师傅大师傅打的方式 Minimal Example:
 
     <FlatList
       data={[{key: 'a'}, {key: 'b'}]}

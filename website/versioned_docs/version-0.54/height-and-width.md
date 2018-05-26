@@ -10,9 +10,9 @@ original_id: height-and-width
 
 设置组件尺寸的最简单方法是在样式中指定固定的`width`和`height`。 `React-Native` 中的所有尺寸都是**无单位**的，并且表示的都是与设备密度无关的所谓 **逻辑像素点**。
 
-``` jsx
-import React, { Component } from 'react';
-import { AppRegistry, View } from 'react-native';
+```jsx
+import React, {Component} from 'react';
+import {AppRegistry, View} from 'react-native';
 
 export default class FixedDimensionsBasics extends Component {
   render() {
@@ -28,20 +28,19 @@ export default class FixedDimensionsBasics extends Component {
 
 // skip this line if using Create React Native App
 AppRegistry.registerComponent('AwesomeProject', () => FixedDimensionsBasics);
-
 ```
 
 无论在何种尺寸、密度的设备上，确定尺寸的组件都将在显示大小上保持一致。
 
 ## 弹性布局 （Flex Dimensions）
 
-在组件样式中使用 `Flex` 可使组件根据可用空间动态扩展与收缩，通常我们会使用 `Flex: 1`以填充所有可用的空间，若有多个相同层级的组件flex值相同时，则会均分可用空间（可以类比于bootstrap中的栅格系统），若flex值不同，则flex值越大，所占空间越大。
+在组件样式中使用 `Flex` 可使组件根据可用空间动态扩展与收缩，通常我们会使用 `Flex: 1`以填充所有可用的空间，若有多个相同层级的组件 flex 值相同时，则会均分可用空间（可以类比于 bootstrap 中的栅格系统），若 flex 值不同，则 flex 值越大，所占空间越大。
 
-> 组件能够使用空间的前提在于在其父组件定义中明确的宽高，比如定义了:`width` `height` 或是 `flex`,若父组件尺寸为0，子组件的`flex`属性将不会生效。
+> 组件能够使用空间的前提在于在其父组件定义中明确的宽高，比如定义了:`width` `height` 或是 `flex`,若父组件尺寸为 0，子组件的`flex`属性将不会生效。
 
 ```jsx
-import React, { Component } from 'react';
-import { AppRegistry, View } from 'react-native';
+import React, {Component} from 'react';
+import {AppRegistry, View} from 'react-native';
 
 export default class FlexDimensionsBasics extends Component {
   render() {
