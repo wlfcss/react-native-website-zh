@@ -1037,7 +1037,13 @@
       "Guides (Android)": "Guides (Android)",
       "Contributing": "Contributing",
       "Components": "Components",
-      "APIs": "APIs"
+      "APIs": "APIs",
+      "基础入门": "基础入门",
+      "进阶指南": "进阶指南",
+      "iOS指南": "iOS指南",
+      "Android指南": "Android指南",
+      "如何做出贡献": "如何做出贡献",
+      "组件": "组件"
     }
   },
   "pages-strings": {

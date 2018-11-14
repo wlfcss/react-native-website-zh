@@ -1,6 +1,6 @@
 {
   "version-0.57-docs": {
-    "The Basics": [
+    "基础入门": [
       "version-0.57-getting-started",
       "version-0.57-tutorial",
       "version-0.57-props",
@@ -15,7 +15,7 @@
       "version-0.57-network",
       "version-0.57-more-resources"
     ],
-    "Guides": [
+    "进阶指南": [
       "version-0.57-components-and-apis",
       "version-0.57-platform-specific-code",
       "version-0.57-navigation",
@@ -38,7 +38,7 @@
       "version-0.57-native-modules-setup",
       "version-0.57-out-of-tree-platforms"
     ],
-    "Guides (iOS)": [
+    "iOS指南": [
       "version-0.57-native-modules-ios",
       "version-0.57-native-components-ios",
       "version-0.57-linking-libraries-ios",
@@ -46,21 +46,21 @@
       "version-0.57-communication-ios",
       "version-0.57-app-extensions"
     ],
-    "Guides (Android)": [
+    "Android指南": [
       "version-0.57-native-modules-android",
       "version-0.57-native-components-android",
       "version-0.57-headless-js-android",
       "version-0.57-signed-apk-android",
       "version-0.57-removing-default-permissions"
     ],
-    "Contributing": [
+    "如何做出贡献": [
       "version-0.57-contributing",
       "version-0.57-maintainers",
       "version-0.57-building-from-source",
       "version-0.57-testing",
       "version-0.57-understanding-cli"
     ],
-    "Components": [
+    "组件": [
       "version-0.57-activityindicator",
       "version-0.57-button",
       "version-0.57-datepickerios",

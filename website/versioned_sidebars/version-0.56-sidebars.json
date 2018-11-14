@@ -1,6 +1,6 @@
 {
   "version-0.56-docs": {
-    "The Basics": [
+    "基础入门": [
       "version-0.56-getting-started",
       "version-0.56-tutorial",
       "version-0.56-props",
@@ -15,7 +15,7 @@
       "version-0.56-network",
       "version-0.56-more-resources"
     ],
-    "Guides": [
+    "进阶指南": [
       "version-0.56-components-and-apis",
       "version-0.56-platform-specific-code",
       "version-0.56-navigation",
@@ -37,7 +37,7 @@
       "version-0.56-troubleshooting",
       "version-0.56-native-modules-setup"
     ],
-    "Guides (iOS)": [
+    "iOS指南": [
       "version-0.56-native-modules-ios",
       "version-0.56-native-components-ios",
       "version-0.56-linking-libraries-ios",
@@ -45,21 +45,21 @@
       "version-0.56-communication-ios",
       "version-0.56-app-extensions"
     ],
-    "Guides (Android)": [
+    "Android指南": [
       "version-0.56-native-modules-android",
       "version-0.56-native-components-android",
       "version-0.56-headless-js-android",
       "version-0.56-signed-apk-android",
       "version-0.56-removing-default-permissions"
     ],
-    "Contributing": [
+    "如何做出贡献": [
       "version-0.56-contributing",
       "version-0.56-maintainers",
       "version-0.56-building-from-source",
       "version-0.56-testing",
       "version-0.56-understanding-cli"
     ],
-    "Components": [
+    "组件": [
       "version-0.56-activityindicator",
       "version-0.56-button",
       "version-0.56-datepickerios",

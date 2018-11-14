@@ -1,6 +1,6 @@
 {
   "version-0.54-docs": {
-    "The Basics": [
+    "基础入门": [
       "version-0.54-getting-started",
       "version-0.54-tutorial",
       "version-0.54-props",
@@ -15,7 +15,7 @@
       "version-0.54-network",
       "version-0.54-more-resources"
     ],
-    "Guides": [
+    "进阶指南": [
       "version-0.54-components-and-apis",
       "version-0.54-platform-specific-code",
       "version-0.54-navigation",
@@ -36,7 +36,7 @@
       "version-0.54-upgrading",
       "version-0.54-troubleshooting"
     ],
-    "Guides (iOS)": [
+    "iOS指南": [
       "version-0.54-native-modules-ios",
       "version-0.54-native-components-ios",
       "version-0.54-linking-libraries-ios",
@@ -44,20 +44,20 @@
       "version-0.54-communication-ios",
       "version-0.54-app-extensions"
     ],
-    "Guides (Android)": [
+    "Android指南": [
       "version-0.54-native-modules-android",
       "version-0.54-native-components-android",
       "version-0.54-headless-js-android",
       "version-0.54-signed-apk-android"
     ],
-    "Contributing": [
+    "如何做出贡献": [
       "version-0.54-contributing",
       "version-0.54-maintainers",
       "version-0.54-building-from-source",
       "version-0.54-testing",
       "version-0.54-understanding-cli"
     ],
-    "Components": [
+    "组件": [
       "version-0.54-activityindicator",
       "version-0.54-button",
       "version-0.54-datepickerios",
